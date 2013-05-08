@@ -1,0 +1,41 @@
+{% load staticfiles %}
+
+<html>
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="{% static 'jquery.fineuploader-3.5.0.min.js' %}"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#uploader').fineUploader({
+        request: {
+          endpoint: ""
+        }
+      });
+    /*
+      $("#uploader").submit(function(event){
+        var fd = new FormData(document.getElementById("id_upload"));
+        alert('hi');
+        $.ajax({
+          url: "",
+          type: "POST",
+          data: fd,
+          processData: false,  // tell jQuery not to process the data
+          contentType: false,   // tell jQuery not to set contentType
+          success: function(data) {
+            alert('success');
+          }
+        });
+        return false;
+      });*/
+    });
+  </script>
+  <body>
+    <h1>Upload a file here!!</h1>
+    <div id="uploader"></div>
+    <form action="." method="post" enctype="multipart/form-data" id="uploader">
+      <table>
+        {{ form.as_table }}
+      </table>
+      <button type="submit">Submit!</button>
+    </form>
+  </body>
+</html>

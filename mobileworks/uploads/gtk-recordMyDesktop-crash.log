@@ -1,0 +1,22 @@
+#This is the command given at initialization:
+recordmydesktop -o /home/matt/out.ogv --fps 20 --channels 1 --freq 22050 --device hw:1,1 --v_quality 63 --s_quality 10 --workdir /tmp 
+
+
+#recordMyDesktop stderror output:
+Initial recording window is set to:
+X:0   Y:0    Width:3600    Height:1080
+Adjusted recording window is set to:
+X:0   Y:4    Width:3600    Height:1072
+Your window manager appears to be Compiz
+
+
+Detected compositing window manager.
+Reverting to full screen capture at every frame.
+To disable this check run with --no-wm-check
+(though that is not advised, since it will probably produce faulty results).
+
+Initializing...
+Buffer size adjusted to 4096 from 4096 frames.
+Couldn't open PCM device hw:1,1
+Error while opening/configuring soundcard hw:1,1
+Try running with the --no-sound or specify a correct device.
