@@ -130,6 +130,10 @@ INSTALLED_APPS = (
 # Location for storing files
 UPLOADS = os.path.join(os.path.dirname(__file__), 'uploads')
 
+# S3 settings
+ACCESS_KEY = ''
+SECRET_KEY = ''
+
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
 # the site admins on every HTTP 500 error when DEBUG=False.
